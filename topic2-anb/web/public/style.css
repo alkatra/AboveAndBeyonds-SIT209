@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+
+#first-row {
+    height: 33%;
+    border: 20px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#second-row {
+    height:60%;
+}
+
+#light-list, #list-updater, #color-chhooser {
+    width: 33%;
+    /* display: flex; */
+    border: 20px solid white;
+}
+
+
+

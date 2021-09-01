@@ -1,0 +1,16 @@
+html,body {
+    height:100%;
+}
+#top,#bottom {
+    height: 30%;
+}
+#middle {
+    height:40%;
+    /* max-width: 30%; */
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+#r-top {
+    height:15%;
+}

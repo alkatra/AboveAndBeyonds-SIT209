@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about IoT Applications" />
+    <meta name="author" content="SAGAR GUPTA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Car</title>
+  </head>
+
+  <body>    
+    <div class=flex-container>
+    <div id="Fa"><center><h1>Climate Controls</h1>
+    <h4>Current Temperature Setting: <br/><div id="add-temp"></div><br/></h4>
+    <button class="btn btn-danger" id="temp-increase">Increase</button>
+    <button class="btn btn-primary" id="temp-decrease">Decrease</button></center>
+    </div>
+
+
+
+    <div id="Fb"><center><h1>Seat Positioning</h1></center>
+      <div id="seat-div"><img src="seat.png" id="seat-img" class="center"></div>
+      <center>
+      <button class="btn btn-warning" id="seat-decrease">Shift Left</button>
+      <button class="btn btn-warning" id="seat-increase">Shift Right</button></center></div></div>
+    
+    
+    
+    <div class=flex-container>
+    <div id="Sa"><h1>Saved Addresses</h1>
+      <table id="addressTable" class="table">
+        <thead>
+          <tr>
+            <th>Addresses</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+      <div class="form-group"><br/></br/><br/>
+        <label for="name">Add an address</label>
+        <input type="text" class="form-control" id="addressx" /></br/>
+        <button class="btn btn-success" id="new-address">Add this address!</button>
+      </div>
+
+    </div>
+    <div id="Sb"><h1>Change Car's Ambient Lighting</h1><br/>
+    <div id="current-ambience"><br/><center><b>Current Color</b></center><br/></div><br/>
+
+    <div id="colors-container">
+    <center><div id="color-red" onclick='colorchanger("pink")'>RED</div>
+    <div id="color-blue" onclick='colorchanger("lightblue")'>BLUE</div>
+    <div id="color-grey" onclick='colorchanger("lightgrey")'>GREY</div>
+    <div id="color-orange" onclick='colorchanger("orange")'>ORANGE</div>
+    <div id="color-green" onclick='colorchanger("lightgreen")'>GREEN</div>
+    <div id="color-plum" onclick='colorchanger("plum")'>PLUM</div>
+    <div id="color-slateblue" onclick='colorchanger("slateblue")'>SLATE BLUE</div>
+    <div id="color-lightsalmon" onclick='colorchanger("lightsalmon")'>LIGHT SALMON</div>
+    <div id="color-khaki" onclick='colorchanger("khaki")'>KHAKI</div>
+    <div id="color-seagreen" onclick='colorchanger("seagreen")'>SEA GREEN</div>
+    <div id="color-rosybrown" onclick='colorchanger("rosybrown")'>ROSY BROWN</div></center></div></div></div>
+    
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="page.js"></script>
+  <script src="main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

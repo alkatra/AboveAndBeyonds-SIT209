@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about IoT Applications" />
+    <meta name="author" content="SAGAR GUPTA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>IoT Applications</title>
+  </head>
+
+  <body>
+
+    <div id="top-part">
+        </br><h1>Smart Home IoT Integration</h1>
+    </div>
+
+    <div class="d-flex flex-row" id="bottom-part">
+
+        <!-- FIRST COLUMN -->
+        <div class="p-3" id="flex">
+
+            <h2>Introduction</h2>
+            <img src="iot.png" alt="Internet of Things">
+
+            <div class="center">
+                <a href="#demo" class="btn btn-info" data-toggle="collapse">(what is IoT?)</a>
+                <div id="demo" class="collapse">
+                    <p id="left-flex"></br>An IoT Application allows devices to talk to each other to facilitate certain features either digitally or physically without the aid of a person.
+                    </br>Some examples that come to mind are: </p>
+                    <ul id="left-list">
+                      <li>Google Home/Alexa etc smart speakers</li>
+                      <li>Philips Hue bulbs</li>
+                      <li>Remote Central Climate Controls based on sensors</li>
+                      <li>Smart Watches</li> 
+                    </ul>
+                </div>
+                <p id="left-flex"></br>In a smart building, ideally there would be an app that regulates user functions as per their demand. Temperature of common areas would be regulated by the building manager and each apartment would have its own NFC key via the app as well as climate controls. A myriad of sensors will be needed for proper functioning, including sensors to detect light and day, motion sensors to detect body movement to enable lighting and climate controls, fire detectors, smoke detectors, and various safety systems as well as energy-efficiency promoting sensors. A processing room is needed for all smart communications as well as servers for the application to communicate with the devices. With a local server, latency is reduced and bandwidth is increased with proper connections to devices via hidden ethernet wires. One other useful feature might be the integration of speakers over each area of the apartments with a smart device controlling each of them via voice/mobile commands.</p>
+          
+            </div>
+
+        </div>
+
+        <!-- SECOND COLUMN -->
+        <div class="p-3" id="flex">
+            <p id="center-flex">An IoT control interface for the smart building would have to include a dashboard featuring current energy efficiency levels, compared with historical data over the past weeks/months. Toggleable notifications should alert residents of outside temperatures and whether their climate control setting is the most efficient for the moment. It should be compatible with various IoT devices and their functionalities such as changing the color of Philips Hue bulbs, adjusting volumes of Alexa/Google Home etc smart home devices, etc. It should have an authentication method such as biometrics as the app could possibly act as an NFC key to the apartment itself. A chat platform with a ticket system should be issued between residents, the landlords, and the building manager.</p>
+            <p id="center-flex">Add parts via the form below that you think might be needed in a smart building:</p>
+                
+            <table id="parts" class="table">
+                <thead>
+                    <tr>
+                    <th>Parts Needed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+            <h2>Add a part: </h2>
+
+            <div class="form-group">
+                <label for="partname">Part name</label>
+                <input type="text" class="form-control" id="partname" />
+            </div>
+        
+            <button class="btn btn-success" id="add-part">Add</button>
+            <button class="btn btn-danger" id="remove-part">Remove Last Part</button>
+
+        </div>
+        
+        <!-- THIRD COLUMN -->
+        <div class="p-3" id="flex"><div id="bottom-part">
+            <h2>Life simplified with connected devices</h2></br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NjYTzvAVozo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>The video demonstrates and ultimate smart home integration of various sensors with actuators and logic that allow for a comfortable IoT lifestyle.</br></p>
+        </div>
+        <div id="top-part">SIT209: Software Engineering 2</br>Submitted by Sagar Gupta, 220010464</div></div>
+    </div>
+    <script src="app.js"></script>
+    
+  </body>
